@@ -8,12 +8,16 @@ interface Customer {
   company: string;
 }
 
-type PersonnePro = Employe | Customer;
+export type PersonnePro = Employe | Customer;
 
-function afficherPersonneProfessionnelle(personne: PersonnePro): string {
+export function afficherPersonneProfessionnelle(personne: PersonnePro) {
   if ("post" in personne) {
-    return `Employé: ${personne.name} travaille comme ${personne.post}`;
+    console.log(
+      `Episode 3: Employé => ${personne.name} travaille comme ${personne.post}`
+    );
   } else {
-    return `Client: ${personne.name} est associé à l'entreprise ${personne.company}`;
+    console.log(
+      `Episode 3: Client => ${personne.name} est associé à l'entreprise ${personne.company}`
+    );
   }
 }

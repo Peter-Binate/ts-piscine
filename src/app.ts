@@ -3,6 +3,10 @@ import {
   afficherPersonneAvancee,
   InformationsPersonne,
 } from "./s1/ep2/personne.js";
+import {
+  PersonnePro,
+  afficherPersonneProfessionnelle,
+} from "./s1/ep3/personnePro.js";
 
 // Episode 1
 let personne1: Personne = { name: "Modibo", age: 18 };
@@ -24,3 +28,17 @@ let personne3: InformationsPersonne = {
 
 afficherPersonneAvancee(personne2);
 afficherPersonneAvancee(personne3);
+
+// Episode 3
+let employe1: PersonnePro = {
+  name: "Modibo",
+  post: "Développeur",
+};
+
+let client1: PersonnePro = {
+  name: "Adrien",
+  company: "Google",
+};
+
+afficherPersonneProfessionnelle(employe1);
+afficherPersonneProfessionnelle(client1);
