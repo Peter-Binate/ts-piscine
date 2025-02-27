@@ -1,23 +1,4 @@
-import { premierElement } from "./s2/ep1/generics.js";
-import { premierElementS2 } from "./s2/ep2/generics.js";
-import { getProperty } from "./s2/ep2/generics.js";
+import { traiterValeur } from "./s3/ep1/narrowing.js";
 // Episode 1
-let numberArray = [1, 2, 3];
-let strinArray = ["a", "b", "c"];
-let objectArray = [{ name: "John" }, { name: "Doe" }];
-premierElement(numberArray);
-premierElement(strinArray);
-premierElement(objectArray);
-// Episode 2
-let city = ["London", "Moscou", "Berlin"];
-let emptyArray = [];
-premierElementS2(city);
-premierElementS2(emptyArray);
-// Episode 3
-let maVoiture = {
-    marque: "Toyota",
-    modele: "Corolla",
-    annee: 2020,
-};
-getProperty(maVoiture, "marque");
-getProperty(maVoiture, "modele");
+traiterValeur("Hello");
+traiterValeur(42);
