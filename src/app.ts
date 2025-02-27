@@ -1,44 +1,9 @@
-import { afficherPersonne, Personne } from "./s1/ep1/personne.js";
-import {
-  afficherPersonneAvancee,
-  InformationsPersonne,
-} from "./s1/ep2/personne.js";
-import {
-  PersonnePro,
-  afficherPersonneProfessionnelle,
-} from "./s1/ep3/personnePro.js";
+import { premierElement } from "./s2/ep1/generics.js";
 
 // Episode 1
-let personne1: Personne = { name: "Modibo", age: 18 };
-afficherPersonne(personne1);
-
-// Episode 2
-let personne2: InformationsPersonne = {
-  id: 1,
-  name: "Modibo",
-  age: 18,
-  adress: { street: "5th Avenue", city: "New York" },
-};
-
-let personne3: InformationsPersonne = {
-  id: 2,
-  name: "Adrien",
-  age: 21,
-};
-
-afficherPersonneAvancee(personne2);
-afficherPersonneAvancee(personne3);
-
-// Episode 3
-let employe1: PersonnePro = {
-  name: "Modibo",
-  post: "Développeur",
-};
-
-let client1: PersonnePro = {
-  name: "Adrien",
-  company: "Google",
-};
-
-afficherPersonneProfessionnelle(employe1);
-afficherPersonneProfessionnelle(client1);
+let numberArray = [1, 2, 3];
+let strinArray = ["a", "b", "c"];
+let objectArray = [{ name: "John" }, { name: "Doe" }];
+premierElement(numberArray);
+premierElement(strinArray);
+premierElement(objectArray);
